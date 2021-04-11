@@ -1,20 +1,35 @@
-/*localStorage.setItem("Favorite-Super-Hero:","Thor");
-localStorage.setItem("Favorite-Movie:","Winter Soldier");
-localStorage.setItem("Favorite-Programming-Language:","C++");*/
+const formElement=document.querySelector('#form-element');
+formElement.addEventListener('submit',onSubmit);
+function onSubmit(e)
+{
+    e.preventDefault();
+    let nm=document.querySelector('#name');
+    let em=document.querySelector('#email');
+    let ph=document.querySelector('#phoneNo')    
+    localStorage.setItem("Name",nm.value);
+    localStorage.setItem("Email-id",em.value);
+    localStorage.setItem("Phone",ph.value);
+    nm.value='';
+    em.value='';
+    ph.value='';
+}
 
-let Hero=localStorage.getItem("Favorite-Super-Hero:");
-let Movie=localStorage.getItem("Favorite-Movie:");
-let language=localStorage.getItem("Favorite-Programming-Language:");
+window.addEventListener('DOMContentLoaded', (event) => {
 
+    event.preventDefault();
+    let s_name=localStorage.getItem("Name");
+    let s_email=localStorage.getItem("Email-id");
+    let s_phoneNo=localStorage.getItem("Phone");
 
-const localdata=document.querySelector('#Local-storage-data');
-const li1=document.createElement('li');
-li1.appendChild(document.createTextNode(`Favorite-Super-Hero : ${Hero}`));
-localdata.appendChild(li1);
-const li2=document.createElement('li');
-li2.appendChild(document.createTextNode(`Favorite-Movie : ${Movie}`));
-localdata.appendChild(li2);
-const li3=document.createElement('li');
-li3.appendChild(document.createTextNode(`Favorite-Programming-Language: ${language}`));
-localdata.appendChild(li3);
+    const studentdetails=document.querySelector('#studentDetails');
 
+    const li1=document.createElement('li');
+    li1.appendChild(document.createTextNode(`Name : ${s_name}`));
+    studentDetails.appendChild(li1);
+    const li2=document.createElement('li');
+    li2.appendChild(document.createTextNode(`Email : ${s_email}`));
+    studentDetails.appendChild(li2);
+    const li3=document.createElement('li');
+    li3.appendChild(document.createTextNode(`Phone no. : ${s_phoneNo}`));
+    studentDetails.appendChild(li3);
+});
