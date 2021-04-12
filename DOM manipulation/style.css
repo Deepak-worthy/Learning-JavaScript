@@ -1,0 +1,29 @@
+
+header{
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+#main
+{
+    width:30%;
+    margin:auto;
+}
+h2
+{
+    text-align: center;
+}
+#addForm
+{
+    text-align: center;
+}
+ul 
+{
+    list-style-position: inside;
+}
+#list
+{
+    width:40%;
+    margin:auto;
+}
