@@ -1,29 +1,59 @@
-
-header{
+#main-header{
     background-color: green;
     text-align: center;
     color: white;
-    padding: 30px;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+#header-title
+{
+    font-family:Georgia;
+    font-size: 50px;
 }
 #main
 {
     width:30%;
     margin:auto;
+    border-color:green;
+    border-style: solid;
+    border-radius: 7px;
+    margin-top:3px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
-h2
+#additems
 {
-    text-align: center;
+    font-size:xx-large;
+    margin:10px;
 }
-#addForm
+#submit-form
 {
-    text-align: center;
+    margin: 10px;
 }
-ul 
+#List-title
 {
-    list-style-position: inside;
+    margin:10px;
+    font-size:x-large;
 }
 #list
 {
-    width:50%;
-    margin:auto;
+    padding-left: 0pt;
+    margin:5px;
+    list-style-type: none;
+}   
+.list-group-item
+{
+    border:thin solid;
+    padding:10px;
+    margin:5px;
+}
+.btn-delete
+{
+    float:right;   
+    padding:3px 10px  3px 10px;
+}
+.Edit
+{
+    float:right;
+    padding:3px 10px  3px 10px;
+    margin-right: 10px;
 }
