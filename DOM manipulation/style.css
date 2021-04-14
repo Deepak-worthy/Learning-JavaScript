@@ -10,6 +10,17 @@
     font-family:Georgia;
     font-size: 50px;
 }
+#search
+{
+    width: 230px;
+    Height:25px;
+    border:none;
+    border-radius: 3px;
+}
+#submit-id
+{
+    margin-top: 10px;
+}
 #main
 {
     width:30%;
