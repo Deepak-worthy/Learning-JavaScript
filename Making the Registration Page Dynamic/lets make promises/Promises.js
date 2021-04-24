@@ -66,5 +66,3 @@ setTimeout(resolve, 2000, 'Goodbye')
 );
 Promise.all( [promisel, promise2, promise3]).then(values
 => console.log(values));
-
-  
